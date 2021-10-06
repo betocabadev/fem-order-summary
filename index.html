@@ -12,23 +12,48 @@
       href="./images/favicon-32x32.png"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
     <title>Frontend Mentor | Order summary card</title>
   </head>
   <body>
-    <!--
-    Order Summary
-
-    You can now listen to millions of songs, audiobooks, and podcasts on any 
-    device anywhere you like!
-
-    Annual Plan
-    $59.99/year
-
-    Change
-
-    Proceed to Payment
-    Cancel Order
-  -->
+    <main>
+      <div class="card order_summary_card">
+        <div class="card__hero">
+          <img src="./images/illustration-hero.svg" alt="" />
+        </div>
+        <div class="card__body">
+          <h2 class="card__title">Order Summary</h2>
+          <p class="card__description">
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like!
+          </p>
+          <div class="card__item">
+            <img
+              src="./images/icon-music.svg"
+              alt="Music icon"
+              class="card__item__icon"
+            />
+            <div class="card__item__info">
+              <span class="card__item__name">Annual Plan</span>
+              <span class="card__item__price"> $59.99/year</span>
+            </div>
+            <a href="#" class="card__item__action">Change</a>
+          </div>
+          <div class="card__actions">
+            <a href="#" class="btn btn-primary">Proceed to Payment</a>
+            <a href="#" class="link">Cancel Order</a>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <div class="attribution">
       Challenge by
